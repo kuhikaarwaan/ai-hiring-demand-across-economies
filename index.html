@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comparing AI Hiring Demand Across Advanced Economies</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main class="page">
+
+    <h1>Comparing AI Hiring Demand Across Advanced Economies</h1>
+
+    <p class="chart-credit">
+        Visualization by Kuhika Shrivastava
+    </p>
+
+    <p class="chart-credit course-credit">
+        Created for Visualization Technologies 1: Fundamentals, Professor Steven Geofrey | Northeastern University, Spring 2026
+    </p>
+
+    <p class="intro">
+    This visualization examines how the share of AI job postings (as a percentage of total job postings) has evolved over time across two analytically defined country groups. Use the buttons to compare established AI economies with smaller advanced economies and observe differences in growth trajectories.
+    </p>
+
+<!-- For switching between the two dataset variations -->
+    <section class="controls">
+    <input type="button" id="option_major" value="Major AI Economies" class="selected">
+    <input type="button" id="option_smaller" value="Smaller Advanced Economies">
+    </section>
+
+    <section class="chart-wrapper">
+    <h2 class="chart-subtitle" id="chart-subtitle">
+        United States, United Kingdom, and Canada
+    </h2>
+
+    <div id="chart"></div>
+
+    <section class="legend">
+        <div class="legend-item">
+        <span class="legend-color line-1"></span>
+        <span id="legend-1">United States</span>
+        </div>
+        <div class="legend-item">
+        <span class="legend-color line-2"></span>
+        <span id="legend-2">United Kingdom</span>
+        </div>
+        <div class="legend-item">
+        <span class="legend-color line-3"></span>
+        <span id="legend-3">Canada</span>
+        </div>
+    </section>
+
+    <p class="chart-caption">
+    Source: 
+    <a href="https://ourworldindata.org/grapher/share-artificial-intelligence-job-postings" target="_blank">
+        Our World in Data – AI job postings dataset </a>.
+        The Netherlands begins later because those values appear in the source data only from 2019 onward.</p>
+    </section>
+
+</main>
+
+<!--TOOLTIP -->
+<div id="tooltip"></div>
+<!--JAVASCRIPT -->
+<script src="./script.js"></script>
+</body>
+</html>

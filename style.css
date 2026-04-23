@@ -1,0 +1,224 @@
+/* PAGE LAYOUT */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #ffffff;
+  color: #222222;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 48px 20px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  margin: 0 0 16px 0;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 0 auto 24px auto;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+/* BUTTONS */
+.controls {
+  margin-bottom: 22px;
+}
+
+input {
+  font-size: 16px;
+  font-weight: bold;
+  appearance: unset;
+  border: 2px solid #666666;
+  padding: 8px 14px;
+  background: #efefef;
+  color: #222222;
+  margin: 0 6px;
+}
+
+input:hover {
+  border: 2px solid #125946;
+  color: #125946;
+}
+
+.selected {
+  border: 2px solid #125946;
+  color: #125946;
+  background: #e8f3ef;
+}
+
+/* CHART */
+.chart-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px 16px 20px 16px;
+}
+
+.chart-credit {
+  font-size: 13px;
+  color: #777777;
+  margin: 6px 0 12px 0;
+}
+
+.course-credit {
+  font-size: 12px;
+  color: #777777;
+}
+
+.chart-subtitle {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.chart-caption a {
+  color: #125946;
+  text-decoration: underline;
+}
+
+.chart-caption a:hover {
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+text {
+  font-size: 14px;
+  dominant-baseline: middle;
+}
+
+.axis text {
+  font-size: 12px;
+  fill: #222222;
+}
+
+.axis path,
+.axis line {
+  stroke: #555555;
+}
+
+.grid line {
+  stroke: #cfcfcf;
+}
+
+.grid path {
+  stroke: none;
+}
+
+.axis-label {
+  fill: #222222;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+/* MARKERS */
+.line-path {
+  fill: none;
+  stroke-width: 3;
+}
+
+.point {
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  fill-opacity: 0.8;
+}
+
+/* LEGEND */
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 18px 0 10px 0;
+  font-size: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-color {
+  width: 16px;
+  height: 3px;
+}
+
+.line-1 { background: #1f77b4; }
+.line-2 { background: #d62728; }
+.line-3 { background: #2ca02c; }
+
+.chart-caption {
+  max-width: 760px;
+  margin: 12px auto 0 auto;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #555555;
+}
+
+/* TOOLTIP STYLING */
+#tooltip {
+  position: absolute;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  padding: 10px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  pointer-events: none;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.tooltip-year {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 4px 0;
+}
+
+.tooltip-country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip-swatch {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+/* VERTICAL HOVER LINE */
+.hover-line {
+  stroke: #777777;
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+  opacity: 0;
+}
+
+/* HOVER CIRCLES TO BE SHOWN ON HOVER */
+.hover-circle {
+  stroke: #ffffff;
+  stroke-width: 2;
+  opacity: 0;
+}
