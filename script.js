@@ -26,7 +26,7 @@ const tooltip = d3.select("#tooltip");
 /* CSV DATA 
 The CSV stores all values as strings by default. So, I will convert Year and Share
 into numbers here. This will use these values correctly in scales, axes, and line positions later in the chart.*/
-d3.csv("./data/ai_jobs_selected_countries.csv", function (d) {
+d3.csv("https://github.com/kuhikaarwaan/ai-hiring-demand-across-economies/raw/refs/heads/main/Data/ai_jobs_selected_countries.csv", function (d) {
     return {
         year: +d.Year,
         country: d.Country,
